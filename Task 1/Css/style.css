@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --blue-color: #297AC2;
+    --white-color: #fff;
+    --shadow-color: #1f2021;
+    --gray-color: gray;
+    --base-bg: #212428;
+    --bg1: #2e3033;
+    --input-bg: #191b1e;
+}
+@font-face {
+    font-family: 'iransans';
+    src: url(../fonts/iransans/IRANSansWeb-FaNum.eot);
+    src: url(../fonts/iransans/IRANSansWeb-FaNum.ttf);
+    src: url(../fonts/iransans/IRANSansWeb-FaNum.woff);
+    src: url(../fonts/iransans/IRANSansWeb-FaNum.woff2);
+}
+body{
+    width: 100%;
+    background: var(--base-bg);
+    direction: rtl;
+}
+.section-title{
+    color: var(--blue-color);
+    font-size: 2rem;
+    text-align: center;
+    margin : 30px 0 15px 0;
+}
+.section{
+    padding: 20px 150px ;
+    font-family: "iransans";
+}
+.social-links i{
+    background :var(--bg1);
+    padding: 20px;
+    border-radius: 8px;
+}
+.social-links a{
+    color: var(--white-color);
+}
+.contacts{
+    color: var(--white-color);
+}
+#span{
+    display: none;
+}
+#menu-bar{
+    display: none;
+}
+#menu-bar:hover{
+    cursor: pointer;
+}
+/******************************************************************************/
+
+#header> img{
+    width: 80px;
+    height: 50px;
+}
+#header{
+    width:100%;
+    font-family: "iransans";
+    padding: 15px 120px;
+    box-shadow: 2px 2px 5px var(--shadow-color);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+}
+#header ul li{
+    font-size: 12pt;
+    display:inline-block;
+    padding: 0 10px;
+    
+}
+#header ul li a{
+    text-decoration: none;
+    color:var(--white-color)
+}
+#header ul li a:hover{
+    color: var(--blue-color);
+}
+
+/**************************************************************************/
+
+#personal-information{
+    display: flex;
+    justify-content:space-around;
+    padding: 70px 40px;
+    color: var(--white-color);
+    font-family: "iransans";
+    font-size: 1.2rem;
+}
+.personal-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.personal-picture img{
+    height: 100%;
+    background: var(--bg1);
+    border-radius: 10px;
+}
+#personal-information> div{
+    width: 40%;
+}
+.personal-info span{
+    color: var(--blue-color);
+}
+
+
+/************************************************************************/
+
+
+.services{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:10px
+}
+
+.services div{
+    background: var(--bg1);
+    border-radius: 10px;
+    padding: 30px;
+    color: var(--white-color);
+}
+.services i{
+    color: var(--blue-color);
+    font-size: 36pt;
+}
+.services div strong{
+    font-size: 18pt;
+    display: block;
+    padding: 5px 0px;
+}
+.services div:hover i{
+    color: var(--white-color);
+}
+.services div:hover{
+    background:var(--blue-color);
+}
+
+/********************************************/
+
+.skills{
+    display: grid;
+    grid-template-columns: auto auto;
+    gap:40px;
+    color: var(--white-color);
+}
+.progress-bar{
+    width: 100%;
+    height: 15px;
+    box-shadow: inset 7px 7px 8px var(--shadow-color);
+    border-radius: 30px;
+}
+.progress-line{
+    height: 15px;
+    font-size: 8pt;
+    background: linear-gradient(to right,blue, rgb(135, 196, 245));
+    border-radius: 30px;
+    text-align: center;
+}
+#front-end{
+    width: 90%; 
+}
+#back-end{
+    width: 40%; 
+}
+#seo{
+    width: 30%;  
+}
+#wordpress{
+    width: 85%;  
+}
+
+/***********************************************************/
+
+.samples{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap:10px;
+}
+.sample img{
+width: 100%;
+border-radius: 15px;
+transition: all 1s;
+}
+.sample img:hover{
+    transform: scale(1.1);
+}
+.sample{
+    background: var(--bg1);
+    padding: 20px;
+    border-radius: 15px;
+    font-size: 14pt;
+}
+.sample-image{
+    overflow: hidden;
+    border-radius: 15px;
+}
+.subsample{
+    display: flex;
+    justify-content: space-between;
+}
+.subsample p:nth-child(1){
+    color: var(--blue-color);
+}
+.subsample p:nth-child(2){
+    color: gray;
+}
+.sample>p{
+    color: var(--white-color);
+}
+.contact-me{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+}
+.contact-picture{
+    width: 40%;
+    box-shadow: 2px 2px 5px var(--shadow-color);
+    padding: 20px;
+    border-radius: 5px;
+    color: var(--white-color);
+}
+.contact-picture img{
+    width: 100%;
+    border-radius: 5px;
+}
+.contact-picture> p{
+    margin: 10px 0;
+}
+.contact-form{
+    display: flex;
+    width: 50%;
+    box-shadow: 2px 2px 5px var(--shadow-color);
+    padding: 20px;
+    border-radius: 5px;
+}
+.contact-form input,
+.contact-form textarea{
+    width: 100%;
+    padding: 10px;
+    background: var(--input-bg);
+    border-radius: 5px;
+    border: none;
+    outline: none;
+}
+.contact-form label{
+    color: gray;
+}
+.contact-form input[type="submit"]{
+    padding: 5px;
+    font-size: 12pt;
+    font-family: "iransans";
+    width: 100px;
+    height: 40px;
+    background: var(--bg1);
+    color: var(--white-color);
+    border: none;
+}
+.contact-form input[type="submit"]:hover{
+    cursor: pointer;
+}
+/***********************************************/
+.footer img{
+    margin: 20px 0;
+    width: 10%;
+}
+.footer{
+    margin-top: 30px;
+    text-align: center;
+    border-top: 2px solid var(--bg1)
+}
+
+/************Responsive***********/
+
+@media screen and (min-width: 992px) and (max-width: 1200px){
+    #personal-information{
+        padding: 70px 30px;
+        font-size: 1.1rem;
+    }
+    .personal-picture img{
+        height: 420px;
+    }
+    #personal-information> div{
+        width: 45%;
+    }
+    .sample{
+        font-size: 13pt;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+    .section{
+        padding: 20px 70px ;
+    }
+    #header{
+        padding: 15px 60px;
+    }
+    #personal-information{
+        padding: 70px 20px;
+        font-size: 1rem;
+    }
+    .personal-picture img{
+        height: 340px;
+    }
+    #personal-information> div{
+        width: 50%;
+    }
+    .sample{
+        font-size: 13pt;
+    }
+    .personal-info > p{
+        display: none;
+    }
+    #span{
+        display: block;
+        color: var(--white-color);
+    }
+    .services div{
+        padding: 20px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 768px){
+    .section{
+        padding: 20px 30px ;
+    }
+    #header{
+        padding: 15px 30px;
+    }
+    #header > ul{
+        display: none;
+    }
+    #menu-bar{
+        display: inline-block
+    }
+    #personal-information{
+        padding: 70px 20px;
+        font-size: 1rem;
+    }
+    .personal-picture img{
+        height: 260px;
+    }
+    .personal-info > h1{
+        font-size: 16pt;
+    }
+    #personal-information> div{
+        width: 60%;
+    }
+    .sample{
+        font-size: 10pt;
+    }
+    .personal-info > p{
+        display: none;
+    }
+    #span{
+        display: block;
+        color: var(--white-color);
+    }
+    .services div{
+        padding: 15px;
+    }
+    .services div strong{
+        font-size: 10pt;
+    }
+}
+@media screen  and (max-width: 599px){
+    .section{
+        padding: 20px 30px ;
+    }
+    #header{
+        padding: 15px 30px;
+    }
+    #header > ul{
+        display: none;
+    }
+    #menu-bar{
+        display: inline-block
+    }
+    #personal-information{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 70px 20px;
+        font-size: 1rem;
+    }
+    .personal-picture img{
+        height: 260px;
+    }
+    .personal-info > h1{
+        font-size: 16pt;
+    }
+    #personal-information> div{
+        width: 100%;
+        text-align: center;
+    }
+    .sample{
+        font-size: 10pt;
+    }
+    .personal-info > p{
+        display: none;
+    }
+    #span{
+        display: block;
+        color: var(--white-color);
+    }
+    .services div{
+        padding: 15px;
+    }
+    .services div strong{
+        font-size: 10pt;
+    }
+    .contact-me{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact-picture {
+        width: 100%;
+    }
+    .contact-form{
+        width: 100%;
+    }
+}
